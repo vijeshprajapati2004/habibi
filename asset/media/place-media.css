@@ -1,0 +1,48 @@
+
+@media only screen and (max-width: 1270px) {
+
+    .card{
+        width:250px;
+    }    
+}
+@media only screen and (max-width: 1085px) {
+
+    .card{
+        width:350px;
+    }    
+}
+@media only screen and (max-width: 970px) {
+    .container-fluid{
+        grid-template-columns: 30% 70%;
+        /* background-color: tomato; */
+    }
+    .card{
+        width:350px;
+    }    
+}
+@media only screen and (max-width: 740px) {
+
+    .container-fluid{
+       
+        grid-template-columns: 100%;
+        /* background-color: tomato; */
+    }
+    .filter-penal{
+        display: none;
+    }
+    .place-container{
+        width: 100%;
+        margin: 0;
+    }
+    .card{
+        width: 280px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .card{
+        width: 100%;
+    }
+}
