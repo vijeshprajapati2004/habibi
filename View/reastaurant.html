@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/css/common.css">
+    <link rel="stylesheet" href="../asset/css/header.css">
+    <link rel="stylesheet" href="../asset/css/restaurant.css">
+    <link rel="stylesheet" href="../asset/media/common-media.css">
+    <link rel="stylesheet" href="../asset/media/header-media.css">
+    <link rel="stylesheet" href="../asset/media/reastaurant-media.css">
+    <link rel="stylesheet" href="../asset/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script defer src="../asset/javaScript/header.js"></script>
+    <!-- <script defer src="../asset/javaScript/index.js"></script> -->
+    <title>Habibi</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container nav-container">
+            <nav class="top-navbar">
+                <div class="nav-menu-btn-container">
+                    
+                    <img class="nav-menu-btn" src="../img/menu-btn-white.png" alt="" onclick="sidemenuOpen()">
+                    
+                </div>
+                <div class="nav-logo-container">
+                    <a href="#">
+                        <svg height="40" width="180">
+                            <defs>
+                              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:rgb(255, 115, 0);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(255, 166, 0);stop-opacity:1" />
+                              </linearGradient>
+                            </defs>
+                            <ellipse cx="90" cy="22" rx="70" ry="17" fill="url(#grad1)" />
+                            <text fill="#ffffff" font-size="26" font-family="Verdana" x="40" y="30">Habibi</text>
+                            Sorry, your browser does not support inline SVG.
+                          </svg>
+                    </a>
+                </div>
+                <div class="nav-searchbox-container">
+                    <form class="nav-searchbox-form" action="">
+                        <button class="nav-searchbox-button">
+                            <img class="nav-search-icon" src="../img/search-icon.png" alt="">
+                        </button>
+                        <script defer src="../css/cssJavascript.js"></script>
+                        <input class="nav-search-textbox" type="text" placeholder="Where to go...?">
+                    </form>
+                </div>
+
+                <div class="nav-menu-container">
+                    <ul class="nav-ul">
+                        <button class="button nav-button" onclick="showSingup()">Sign up</button>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container fix-navbar-container">
+                <nav class="fix-navbar">
+                    <ul class="fix-navbar-ul">
+                       <a href="#" class="fix-navbar-link"> <li class="fix-navbar-li">place</li></a>
+                       <a href="#" class="fix-navbar-link"><li class="fix-navbar-li">Hotels</li></a>
+                       <a href="#" class="fix-navbar-link"><li class="fix-navbar-li">Restaurant</li></a>
+                       <a href="#" class="fix-navbar-link"><li class="fix-navbar-li">Agent Booking</li></a>
+                       <a href="#" class="fix-navbar-link"><li class="fix-navbar-li">Make my trip</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container heder-text">
+            <section>
+                <h3>Welcome To India</h3>
+                <h1>DO COME & VISIT 
+                <span class="change-content"> </span></h1>
+                <p>"India Once Is Not Enough"</p>
+            </section>
+        </div>
+
+        <!-- ######################## Sidebar menu ###################### -->
+        
+        <nav class="sidebar-menu" id="sidebarID">
+            <ul class="sidebar-nav">
+                    <span class="signup-close-button" onclick="sidemenuClose()">
+                        &times;
+                    </span>
+                    <li class="sidebar-item">   
+                        <a href="#" class="site-name">Habibi</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link" onclick="sidemenuShowSingup()">Singup</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">place</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">Hotels</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">Restaurant</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">Agent Booking</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">Make my trip</a>
+                    </li>
+                    <li class="sidebar-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>    
+        </nav>
+
+    </header>
+
+    <section class="signup-back-container">
+        <div class="signup-front-container">
+            <span class="signup-close-button" onclick="closeSingup()">
+                &times;
+            </span>
+            <div class="signup-form-container">
+                <header>Sign up</header>
+                <form action="#" class="signup-form">
+                  <input type="textbox" name="name" placeholder="Name" required />
+                  <input type="email" name="email" placeholder="E-mail" required/>
+                  <input type="password" name="password" placeholder="Password" required/>
+                  <input type="password" name="re-password" placeholder="Retype password" required/>
+                  
+                  <input type="submit" name="signup_submit" value="Sign up" />
+                </form>
+            </div>
+            <hr>
+            <div class="signin-line">
+                <p>
+                    Already Account? <span onclick="showSingin()"> click here...<span>
+                </p>
+            </div>
+        </div>
+        <div class="signin-front-container">
+            <span class="signup-close-button" onclick="closeSingup()">
+                &times;
+            </span>
+            <div class="signin-form-container">
+                <header>Sign in</header>
+                <form action="#" class="signin-form">
+                  <!-- <input type="textbox" name="name" placeholder="Name" required /> -->
+                  <input type="email" name="email" placeholder="E-mail" required/>
+                  <input type="password" name="password" placeholder="Password" required/>
+                  <!-- <input type="password" name="re-password" placeholder="Retype password" required/> -->
+                  <div >
+                    <input type="checkbox" name="password-remember" id="pas-re"><label for="pas-re">Remeber me</label>
+                    <span onclick="showforget()">Forget Password? </span>
+                  </div>
+                  
+                  <input type="submit" name="signup_submit" value="Sign in" />
+                </form>
+            </div>
+            <hr>
+            <div class="signup-line">
+                <p>
+                    Create Account? <span onclick="showSingup()"> click here...<span>
+                </p>
+            </div>
+        </div>
+        <div class="forget-front-container">
+            <span class="signup-close-button" onclick="closeSingup()">
+                &times;
+            </span>
+            <div class="forget-form-container">
+                <header>Forget Password</header>
+                <form action="#" class="forget-form">
+                  <!-- <input type="textbox" name="name" placeholder="Name" required /> -->
+                  <input type="email" name="email" placeholder="E-mail" required/>
+                  <input type="password" name="password" placeholder="Password" required/>
+                  <input type="password" name="re-password" placeholder="Retype password" required/>
+                  <!-- <div >
+                    <input type="checkbox" name="password-remember" id="pas-re"><label for="pas-re">Remeber me</label>
+                    <span>Forget Password? </span>
+                  </div> -->
+                  
+                  <input type="submit" name="signup_submit" value="Forget password" />
+                </form>
+            </div>
+            <!-- <hr>
+            <div class="signup-line">
+                <p>
+                    Create Account? <span onclick="showSingup()"> click here...<span>
+                </p>
+            </div> -->
+        </div>
+    </section>
+
+    <div class="container bottom-navbar-container">
+        <nav class="bottom-navbar">
+            <ul class="bottom-nav-ul">
+                <li class="bottom-nav-li">
+                    <a href="">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/placeicon.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text" >Place</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="bottom-nav-li">
+                    <a href="">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/hotelicon.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text" >Hotels</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="bottom-nav-li">
+                    <a href="">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/restauranticon.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text" >Restaurant</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="bottom-nav-li">
+                    <a href="">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/thingsicon.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text" >Agent Booking</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="bottom-nav-li makeMyTrip-for-media">
+                    <a href="">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/world.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text">Make my trip</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="container-fluid">
+            <section class="filter-penal">
+                <div class="filter-type-box">
+                    <h3 style="margin-bottom: 20px;">Filter by...</h3>
+                    <h4>Facilities</h4>
+                    <hr>
+                    <div class="filter-item-box">
+                        <div class="filter-item">
+                            <input type="checkbox" name="beaches" id="beaches" name="beaches"> 
+                                <label for="beaches">Delivery</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="wildlife" id="wildlife" name="wildlife"> 
+                                <label for="wildlife">Takeout</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="woterfront" id="woterfront" name="woterfront"> 
+                                <label for="woterfront">Gift Card Available</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="hetitage" id="hetitage" name="hetitage"> 
+                                <label for="hetitage">Reservations</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="filter-type-box">
+                    <h4>Meal</h4>
+                    <hr>
+                    <div class="filter-item-box">
+                        <div class="filter-item">
+                            <input type="checkbox" name="waterSports" id="waterSports" name="waterSports"> 
+                                <label for="waterSports">Breakfast</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="snowSports" id="snowSports" name="snowSports"> 
+                                <label for="snowSports">Branch</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="trekking" id="trekking" name="trekking"> 
+                                <label for="trekking">Lunch</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="extremeSports" id="extremeSports" name="extremeSports"> 
+                                <label for="extremeSports">Dinner</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="filter-type-box">
+                    <h4>Cuisine</h4>
+                    <hr>
+                    <div class="filter-item-box">
+                        <div class="filter-item">
+                            <input type="checkbox" name="jfm" id="jfm" name="jfm"> 
+                                <label for="jfm">American </label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="amj" id="amj" name="amj"> 
+                                <label for="amj">Italian</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="jas" id="jas" name="jas"> 
+                                <label for="jas">Asian</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="ond" id="ond" name="ond"> 
+                                <label for="ond">Pizza</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="filter-type-box">
+                    <h4>Price</h4>
+                    <hr>
+                    <div class="filter-item-box">
+                        <div class="filter-item">
+                            <input type="checkbox" name="jfm" id="jfm" name="jfm"> 
+                                <label for="jfm">Cheap Eats </label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="amj" id="amj" name="amj"> 
+                                <label for="amj">Mid-Ranges</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="jas" id="jas" name="jas"> 
+                                <label for="jas">Fine-Dining</label>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+            <section class="hotel-container">
+                <div class="hotel-card">
+                    <div class="hotel-image">
+                        <img src="../img/res/BOMRA'S.jpg" alt="">
+                    </div>
+                    <div class="hotel-info-container">
+                        <h3>TJL Restaurant</h3>
+                        <star>
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/blackstar.svg" alt="">
+                            <img src="../img/blackstar.svg" alt="">
+                        </star><br>
+                        <p>2.1 Km from city center</p>
+                        <br>
+                        <a href="" class="card-place-rating" >
+                                <span class="obtain-rating" style="width: 40px;">&nbsp; 10.0 &nbsp;&nbsp;</span>
+                                <span style="color:#3d81bb;">( 125 Review )</span>
+                        </a>
+                    </div>
+                    <div class="hotel-bookning-container">
+                        <p>Starting from</p>
+                        <p class="money">&#8360. 500</p>
+                        <div class="card-button">
+                            <span>View More...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <div class="hotel-image">
+                        <img src="../img/res/BOMRA'S.jpg" alt="">
+                    </div>
+                    <div class="hotel-info-container">
+                        <h3>TJL Hotel</h3>
+                        <star>
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/blackstar.svg" alt="">
+                            <img src="../img/blackstar.svg" alt="">
+                        </star><br>
+                        <p>2.1 Km from city center</p>
+                        <br>
+                        <a href="" class="card-place-rating" >
+                                <span class="obtain-rating" style="width: 40px;">&nbsp; 10.0 &nbsp;&nbsp;</span>
+                                <span style="color:#3d81bb;">( 125 Review )</span>
+                        </a>
+                    </div>
+                    <div class="hotel-bookning-container">
+                        <p>Starting from</p>
+                        <p class="money">&#8360. 2000</p>
+                        <div class="card-button">
+                            <span>View More...</span>
+                        </div>
+                    </div>
+                </div><div class="hotel-card">
+                    <div class="hotel-image">
+                        <img src="../img/res/BOMRA'S.jpg" alt="">
+                    </div>
+                    <div class="hotel-info-container">
+                        <h3>TJL Hotel</h3>
+                        <star>
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/blackstar.svg" alt="">
+                            <img src="../img/blackstar.svg" alt="">
+                        </star><br>
+                        <p>2.1 Km from city center</p>
+                        <br>
+                        <a href="" class="card-place-rating" >
+                                <span class="obtain-rating" style="width: 40px;">&nbsp; 10.0 &nbsp;&nbsp;</span>
+                                <span style="color:#3d81bb;">( 125 Review )</span>
+                        </a>
+                    </div>
+                    <div class="hotel-bookning-container">
+                        <p>Starting from</p>
+                        <p class="money">&#8360. 2000</p>
+                        <div class="card-button">
+                            <span>View More...</span>
+                        </div>
+                    </div>
+                </div><div class="hotel-card">
+                    <div class="hotel-image">
+                        <img src="../img/res/BOMRA'S.jpg" alt="">
+                    </div>
+                    <div class="hotel-info-container">
+                        <h3>TJL Hotel</h3>
+                        <star>
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/blackstar.svg" alt="">
+                            <img src="../img/blackstar.svg" alt="">
+                        </star><br>
+                        <p>2.1 Km from city center</p>
+                        <br>
+                        <a href="" class="card-place-rating" >
+                                <span class="obtain-rating" style="width: 40px;">&nbsp; 10.0 &nbsp;&nbsp;</span>
+                                <span style="color:#3d81bb;">( 125 Review )</span>
+                        </a>
+                    </div>
+                    <div class="hotel-bookning-container">
+                        <p>Starting from</p>
+                        <p class="money">&#8360. 2000</p>
+                        <div class="card-button">
+                            <span>View More...</span>
+                        </div>
+                    </div>
+                </div><div class="hotel-card">
+                    <div class="hotel-image">
+                        <img src="../img/res/BOMRA'S.jpg" alt="">
+                    </div>
+                    <div class="hotel-info-container">
+                        <h3>TJL Hotel</h3>
+                        <star>
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/goldstar.svg" alt="">
+                            <img src="../img/blackstar.svg" alt="">
+                            <img src="../img/blackstar.svg" alt="">
+                        </star><br>
+                        <p>2.1 Km from city center</p>
+                        <br>
+                        <a href="" class="card-place-rating" >
+                                <span class="obtain-rating" style="width: 40px;">&nbsp; 10.0 &nbsp;&nbsp;</span>
+                                <span style="color:#3d81bb;">( 125 Review )</span>
+                        </a>
+                    </div>
+                    <div class="hotel-bookning-container">
+                        <p>Starting from</p>
+                        <p class="money">&#8360. 2000</p>
+                        <div class="card-button">
+                            <span>View More...</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="container">
+        <div class="footer-container">
+          <div class="left-col">
+            <p class="logo"> Habibi </p>
+            <div class="social-media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="rights-text">© 2024 Created By Habibi All Rights Reserved.</p>
+          </div>
+  
+          <div class="right-col">
+            <h1>Became a Subscriber</h1>
+            <div class="border"></div>
+            <p>Enter Your Email to get our news.</p>
+            <form action="" class="newsletter-form">
+              <input type="text" class="txtb" placeholder="Enter Your Email">
+              <input type="submit" class="btn" value="submit">
+            </form>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
