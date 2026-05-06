@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1280px) {
+    /* For mobile phones: */
+    .container{
+      width: 100%;
+    }
+    .prev-btn{
+    left:1px;
+    }
+    .next-btn{
+        right: 1px;
+    }
+}
+
+
+/* ##############    Media Querary of Index    ############## */
+
+    

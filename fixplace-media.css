@@ -1,0 +1,14 @@
+@media only screen and (max-width: 740px) {
+    .place-image-container{
+        grid-column: 1/13;
+    }
+    .place-info-container{
+        grid-column: 1/13;
+      }
+    .nearby-container{
+        display: none;
+    }
+    .place-details{
+        grid-column: 1/13;
+    }
+}
