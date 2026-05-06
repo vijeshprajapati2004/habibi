@@ -1,0 +1,90 @@
+.container-fluid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* background-color: tomato; */
+}
+.hotel-card{
+    vertical-align: middle;
+    width: 100%;
+    /* min-width: 250px; */
+    height: fit-content;
+    border-radius:10px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+    margin: 10px;
+    
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    object-fit: cover;
+    /* transition: transform .5s ease-in-out; */
+    background-color: white;
+    position: relative;
+}
+.hotel-image{
+    flex:1;
+    width:300px;
+}
+.hotel-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.hotel-info-container{
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    
+}
+.hotel-info-container h3{
+    font-size: 28px;
+    /* margin:10px; */
+}
+.hotel-info-container > star >img{
+    height: 20px;
+}
+.obtain-rating{
+    /* position: absolute; */
+    border-radius: 5px;
+    color: white;
+    /* top: 10px; */
+    /* right: 10px; */
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 33px;
+    background-color:rgba(0, 150, 0, 0.8);
+    font-size: 20px;
+}
+.card-button{
+    margin-top: 20px;
+    height: 40px;
+    width: 180px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    background-image: linear-gradient(to right,brown,red,brown);
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: 600;
+    cursor: pointer;
+    float: right;
+}
+.hotel-bookning-container{
+    flex: 1;
+    min-width: 200px;
+    text-align: right;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+.hotel-bookning-container > p {
+    color: gray;
+    padding: 5px;
+}
+.hotel-bookning-container > .money{
+    font-size: 30px;
+    color: green;
+}
