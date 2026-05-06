@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/css/common.css">
+    <!-- <link rel="stylesheet" href="../css/header.css"> -->
+    <link rel="stylesheet" href="../asset/css/place.css"> 
+    <link rel="stylesheet" href="../asset/media/common-media.css">
+    <link rel="stylesheet" href="../asset/media/place-media.css">
+    <link rel="stylesheet" href="../asset/css/header.css">
+    <link rel="stylesheet" href="../asset/media/header-media.css">
+    <link rel="stylesheet" href="../asset/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script defer src="../asset/javaScript/header.js"></script>
+    <!-- <script defer src="../css/cssJavascript.js"></script> -->
+    <title>Habibi</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container nav-container">
+            <nav class="top-navbar">
+                <div class="nav-menu-btn-container">
+                    
+                    <img class="nav-menu-btn" src="../img/menu-btn-white.png" alt="" onclick="sidemenuOpen()">
+                    
+                </div>
+                <div class="nav-logo-container">
+                    <a href="#">
+                        <svg height="40" width="180">
+                            <defs>
+                              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:rgb(255, 115, 0);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(255, 166, 0);stop-opacity:1" />
+                              </linearGradient>
+                            </defs>
+                            <ellipse cx="90" cy="22" rx="70" ry="17" fill="url(#grad1)" />
+                            <text fill="#ffffff" font-size="26" font-family="Verdana" x="40" y="30">Habibi</text>
+                            Sorry, your browser does not support inline SVG.
+                          </svg>
+                    </a>
+                </div>
+                <div class="nav-searchbox-container">
+                    <form class="nav-searchbox-form" action="">
+                        <button class="nav-searchbox-button">
+                            <img class="nav-search-icon" src="../img/search-icon.png" alt="">
+                        </button>
+                        <script defer src="../css/cssJavascript.js"></script>
+                        <input class="nav-search-textbox" type="text" placeholder="Where to go...?">
+                    </form>
+                </div>
+
+                <div class="nav-menu-container">
+                    <ul class="nav-ul">
+                        <button class="button nav-button" onclick="showSingup()">Sign up</button>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container fix-navbar-container">
+                <nav class="fix-navbar">
+                    <ul class="fix-navbar-ul">
+                       <a href="#" class="fix-navbar-link"> <li class="fix-navbar-li">place</li></a>
+                       <a href="#" class="fix-navbar-link"><li class="fix-navbar-li">Hotels</li></a>
+                       <a href="#" class="fix-navbar-link"><li class="fix-navbar-li">Restaurant</li></a>
+                       <a href="#" class="fix-navbar-link"><li class="fix-navbar-li">Agent Booking</li></a>
+                       <a href="#" class="fix-navbar-link"><li class="fix-navbar-li">Make my trip</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container heder-text">
+            <section>
+                <h3>Welcome To India</h3>
+                <h1>DO COME & VISIT 
+                <span class="change-content"> </span></h1>
+                <p>"India Once Is Not Enough"</p>
+            </section>
+        </div>
+
+        <!-- ######################## Sidebar menu ###################### -->
+        
+        <nav class="sidebar-menu" id="sidebarID">
+            <ul class="sidebar-nav">
+                    <span class="signup-close-button" onclick="sidemenuClose()">
+                        &times;
+                    </span>
+                    <li class="sidebar-item">   
+                        <a href="#" class="site-name">Habibi</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link" onclick="sidemenuShowSingup()">Singup</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">place</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">Hotels</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">Restaurant</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">Agent Booking</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">Make my trip</a>
+                    </li>
+                    <li class="sidebar-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>    
+        </nav>
+
+    </header>
+
+    <section class="signup-back-container">
+        <div class="signup-front-container">
+            <span class="signup-close-button" onclick="closeSingup()">
+                &times;
+            </span>
+            <div class="signup-form-container">
+                <header>Sign up</header>
+                <form action="#" class="signup-form">
+                  <input type="textbox" name="name" placeholder="Name" required />
+                  <input type="email" name="email" placeholder="E-mail" required/>
+                  <input type="password" name="password" placeholder="Password" required/>
+                  <input type="password" name="re-password" placeholder="Retype password" required/>
+                  
+                  <input type="submit" name="signup_submit" value="Sign up" />
+                </form>
+            </div>
+            <hr>
+            <div class="signin-line">
+                <p>
+                    Already Account? <span onclick="showSingin()"> click here...<span>
+                </p>
+            </div>
+        </div>
+        <div class="signin-front-container">
+            <span class="signup-close-button" onclick="closeSingup()">
+                &times;
+            </span>
+            <div class="signin-form-container">
+                <header>Sign in</header>
+                <form action="#" class="signin-form">
+                  <!-- <input type="textbox" name="name" placeholder="Name" required /> -->
+                  <input type="email" name="email" placeholder="E-mail" required/>
+                  <input type="password" name="password" placeholder="Password" required/>
+                  <!-- <input type="password" name="re-password" placeholder="Retype password" required/> -->
+                  <div >
+                    <input type="checkbox" name="password-remember" id="pas-re"><label for="pas-re">Remeber me</label>
+                    <span onclick="showforget()">Forget Password? </span>
+                  </div>
+                  
+                  <input type="submit" name="signup_submit" value="Sign in" />
+                </form>
+            </div>
+            <hr>
+            <div class="signup-line">
+                <p>
+                    Create Account? <span onclick="showSingup()"> click here...<span>
+                </p>
+            </div>
+        </div>
+        <div class="forget-front-container">
+            <span class="signup-close-button" onclick="closeSingup()">
+                &times;
+            </span>
+            <div class="forget-form-container">
+                <header>Forget Password</header>
+                <form action="#" class="forget-form">
+                  <!-- <input type="textbox" name="name" placeholder="Name" required /> -->
+                  <input type="email" name="email" placeholder="E-mail" required/>
+                  <input type="password" name="password" placeholder="Password" required/>
+                  <input type="password" name="re-password" placeholder="Retype password" required/>
+                  <!-- <div >
+                    <input type="checkbox" name="password-remember" id="pas-re"><label for="pas-re">Remeber me</label>
+                    <span>Forget Password? </span>
+                  </div> -->
+                  
+                  <input type="submit" name="signup_submit" value="Forget password" />
+                </form>
+            </div>
+            <!-- <hr>
+            <div class="signup-line">
+                <p>
+                    Create Account? <span onclick="showSingup()"> click here...<span>
+                </p>
+            </div> -->
+        </div>
+    </section>
+
+    <div class="container bottom-navbar-container">
+        <nav class="bottom-navbar">
+            <ul class="bottom-nav-ul">
+                <li class="bottom-nav-li">
+                    <a href="">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/placeicon.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text" >Place</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="bottom-nav-li">
+                    <a href="">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/hotelicon.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text" >Hotels</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="bottom-nav-li">
+                    <a href="">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/restauranticon.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text" >Restaurant</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="bottom-nav-li">
+                    <a href="">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/thingsicon.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text" >Agent Booking</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="bottom-nav-li makeMyTrip-for-media">
+                    <a href="">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/world.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text">Make my trip</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="container-fluid">
+            <section class="filter-penal">
+                <div class="filter-type-box">
+                    <h3 style="margin-bottom: 20px;">Filter by...</h3>
+                    <h4>Categories</h4>
+                    <hr>
+                    <div class="filter-item-box">
+                        <div class="filter-item">
+                            <input type="checkbox" name="beaches" id="beaches" name="beaches"> 
+                                <label for="beaches">Beaches</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="wildlife" id="wildlife" name="wildlife"> 
+                                <label for="wildlife">Wildlife</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="woterfront" id="woterfront" name="woterfront"> 
+                                <label for="woterfront">Woterfront</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="hetitage" id="hetitage" name="hetitage"> 
+                                <label for="hetitage">Hetitage</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="hillstation" id="hillstation" name="hillstation"> 
+                                <label for="hillstation">Hill Station</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="adventure" id="adventure" name="adventure"> 
+                                <label for="adventure">Adventure</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="deserts" id="deserts" name="deserts"> 
+                                <label for="deserts">Deserts</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="filter-type-box">
+                    <h4>Activities</h4>
+                    <hr>
+                    <div class="filter-item-box">
+                        <div class="filter-item">
+                            <input type="checkbox" name="waterSports" id="waterSports" name="waterSports"> 
+                                <label for="waterSports">Water Sports</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="snowSports" id="snowSports" name="snowSports"> 
+                                <label for="snowSports">Snow Sports</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="trekking" id="trekking" name="trekking"> 
+                                <label for="trekking">Trekking</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="extremeSports" id="extremeSports" name="extremeSports"> 
+                                <label for="extremeSports">Extreme Sports</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="filter-type-box">
+                    <h4>Best Time to Visit</h4>
+                    <hr>
+                    <div class="filter-item-box">
+                        <div class="filter-item">
+                            <input type="checkbox" name="jfm" id="jfm" name="jfm"> 
+                                <label for="jfm">Jan, Feb, Mar </label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="amj" id="amj" name="amj"> 
+                                <label for="amj">Apr, May, Jun</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="jas" id="jas" name="jas"> 
+                                <label for="jas">Jul, Aug, Sep</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" name="ond" id="ond" name="ond"> 
+                                <label for="ond">Oct, Nav, Dec</label>
+                        </div>
+                    </div>    
+                </div>
+
+            </section>
+            <section class="place-container">
+                <div class="card">
+                    <h2 class="card-place-name">Bhadrakali Temple</h2>
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Temple.jpg" alt="">
+                        <div class="card-place-rating" id = "card-place-rating">
+                            <span class="obtain-rating">4.4</span>
+                            <span class="total-rating"> /5</span>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p class="place-details">Incredibly alluring, pleasantly boisterous and wreathed in clouds - Gangtok, the capital of Sikkim, is one of the most popular hill stations in India. Lying at the height of 1650 m above sea level, the town during its bright sunny days offers spectacular views of Mt. Kanchenjunga. Gangtok is a base for adventure enthusiasts comprising of trekkers and campers to the Himalayan mountain ranges. During the months of March to Mid-May, blooming of wild Rhododendrons transform the surrounding regions in vast fields of colourful carpets.</p>
+                            <p class="bestTime">
+                                <span class="best-time">Best Time : </span>
+                                January To March
+                            </p>
+                        </article>
+                        <div class="card-button">
+                            <span>Read More...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-place-name">Bhadrakali Temple</h2>
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Temple.jpg" alt="">
+                        <div class="card-place-rating" id = "card-place-rating">
+                            <span class="obtain-rating">4.4</span>
+                            <span class="total-rating"> /5</span>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p class="place-details">Bhadrakali Temple is one of the oldest temples for Goddess Bhadrakali.</p>
+                            <p class="bestTime">
+                                <span class="best-time">Best Time : </span>
+                                January To March
+                            </p>
+                        </article>
+                        <div class="card-button">
+                            <span>Read More...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-place-name">Bhadrakali Temple</h2>
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Temple.jpg" alt="">
+                        <div class="card-place-rating" id = "card-place-rating">
+                            <span class="obtain-rating">4.4</span>
+                            <span class="total-rating"> /5</span>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p class="place-details">Bhadrakali Temple is one of the oldest temples for Goddess Bhadrakali.</p>
+                            <p class="bestTime">
+                                <span class="best-time">Best Time : </span>
+                                January To March
+                            </p>
+                        </article>
+                        <div class="card-button">
+                            <span>Read More...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-place-name">Bhadrakali Temple</h2>
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Temple.jpg" alt="">
+                        <div class="card-place-rating" id = "card-place-rating">
+                            <span class="obtain-rating">4.4</span>
+                            <span class="total-rating"> /5</span>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p class="place-details">Bhadrakali Temple is one of the oldest temples for Goddess Bhadrakali.</p>
+                            <p class="bestTime">
+                                <span class="best-time">Best Time : </span>
+                                January To March
+                            </p>
+                        </article>
+                        <div class="card-button">
+                            <span>Read More...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-place-name">Bhadrakali Temple</h2>
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Temple.jpg" alt="">
+                        <div class="card-place-rating" id = "card-place-rating">
+                            <span class="obtain-rating">4.4</span>
+                            <span class="total-rating"> /5</span>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p class="place-details">Bhadrakali Temple is one of the oldest temples for Goddess Bhadrakali.</p>
+                            <p class="bestTime">
+                                <span class="best-time">Best Time : </span>
+                                January To March
+                            </p>
+                        </article>
+                        <div class="card-button">
+                            <span>Read More...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-place-name">Bhadrakali Temple</h2>
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Temple.jpg" alt="">
+                        <div class="card-place-rating" id = "card-place-rating">
+                            <span class="obtain-rating">4.4</span>
+                            <span class="total-rating"> /5</span>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p class="place-details">Bhadrakali Temple is one of the oldest temples for Goddess Bhadrakali.</p>
+                            <p class="bestTime">
+                                <span class="best-time">Best Time : </span>
+                                January To March
+                            </p>
+                        </article>
+                        <div class="card-button">
+                            <span>Read More...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-place-name">Bhadrakali Temple</h2>
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Temple.jpg" alt="">
+                        <div class="card-place-rating" id = "card-place-rating">
+                            <span class="obtain-rating">4.4</span>
+                            <span class="total-rating"> /5</span>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p class="place-details">Bhadrakali Temple is one of the oldest temples for Goddess Bhadrakali.</p>
+                            <p class="bestTime">
+                                <span class="best-time">Best Time : </span>
+                                January To March
+                            </p>
+                        </article>
+                        <div class="card-button">
+                            <span>Read More...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-place-name">Bhadrakali Temple</h2>
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Temple.jpg" alt="">
+                        <div class="card-place-rating" id = "card-place-rating">
+                            <span class="obtain-rating">4.4</span>
+                            <span class="total-rating"> /5</span>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p class="place-details">Bhadrakali Temple is one of the oldest temples for Goddess Bhadrakali.</p>
+                            <p class="bestTime">
+                                <span class="best-time">Best Time : </span>
+                                January To March
+                            </p>
+                        </article>
+                        <div class="card-button">
+                            <span>Read More...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-place-name">Bhadrakali Temple</h2>
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Temple.jpg" alt="">
+                        <div class="card-place-rating" id = "card-place-rating">
+                            <span class="obtain-rating">4.4</span>
+                            <span class="total-rating"> /5</span>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p class="place-details">Bhadrakali Temple is one of the oldest temples for Goddess Bhadrakali.</p>
+                            <p class="bestTime">
+                                <span class="best-time">Best Time : </span>
+                                January To March
+                            </p>
+                        </article>
+                        <div class="card-button">
+                            <span>Read More...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-place-name">Bhadrakali Temple</h2>
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Temple.jpg" alt="">
+                        <div class="card-place-rating" id = "card-place-rating">
+                            <span class="obtain-rating">4.4</span>
+                            <span class="total-rating"> /5</span>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p class="place-details">Bhadrakali Temple is one of the oldest temples for Goddess Bhadrakali.</p>
+                            <p class="bestTime">
+                                <span class="best-time">Best Time : </span>
+                                January To March
+                            </p>
+                        </article>
+                        <div class="card-button">
+                            <span>Read More...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-place-name">Bhadrakali Temple</h2>
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Temple.jpg" alt="">
+                        <div class="card-place-rating" id = "card-place-rating">
+                            <span class="obtain-rating">4.4</span>
+                            <span class="total-rating"> /5</span>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p class="place-details">Bhadrakali Temple is one of the oldest temples for Goddess Bhadrakali.</p>
+                            <p class="bestTime">
+                                <span class="best-time">Best Time : </span>
+                                January To March
+                            </p>
+                        </article>
+                        <div class="card-button">
+                            <span>Read More...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-place-name">Bhadrakali Temple</h2>
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Temple.jpg" alt="">
+                        <div class="card-place-rating" id = "card-place-rating">
+                            <span class="obtain-rating">4.4</span>
+                            <span class="total-rating"> /5</span>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p class="place-details">Bhadrakali Temple is one of the oldest temples for Goddess Bhadrakali.</p>
+                            <p class="bestTime">
+                                <span class="best-time">Best Time : </span>
+                                January To March
+                            </p>
+                        </article>
+                        <div class="card-button">
+                            <span>Read More...</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="container">
+        <div class="footer-container">
+          <div class="left-col">
+            <p class="logo"> Habibi </p>
+            <div class="social-media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="rights-text">© 2024 Created By Habibi All Rights Reserved.</p>
+          </div>
+  
+          <div class="right-col">
+            <h1>Became a Subscriber</h1>
+            <div class="border"></div>
+            <p>Enter Your Email to get our news.</p>
+            <form action="" class="newsletter-form">
+              <input type="text" class="txtb" placeholder="Enter Your Email">
+              <input type="submit" class="btn" value="submit">
+            </form>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
